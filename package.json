@@ -1,0 +1,34 @@
+{
+  "name": "react-redux-boilerplate",
+  "version": "0.0.1",
+  "description": "React and Redux Boilerplate with best practices based on latest trends / technologies",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "keywords": [
+    "react",
+    "react.js",
+    "redux",
+    "redux.js",
+    "boilerplate",
+    "es6",
+    "es7",
+    "es8",
+    "es9",
+    "jest",
+    "eslint",
+    "prettier"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/micchyboy237/react-redux-boilerplate.git"
+  },
+  "author": "Jethro Estrada <jethroestrada237@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/micchyboy237/react-redux-boilerplate/issues"
+  },
+  "homepage": "https://github.com/micchyboy237/react-redux-boilerplate#readme"
+}
