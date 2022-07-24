@@ -1,7 +1,7 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import {combineReducers} from 'redux';
-import contactReducer from './slices/contact.slice';
+import contactService from './services/contact.service';
 
 export default combineReducers({
-  contact: contactReducer,
+  [contactService.reducerPath]: contactService.reducer,
 });

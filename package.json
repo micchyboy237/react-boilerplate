@@ -5,8 +5,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "test": "jest",
+    "test:watch": "jest --watch",
     "prepare": "husky install && npx husky add .husky/pre-commit \"npx lint-staged\""
   },
   "keywords": [

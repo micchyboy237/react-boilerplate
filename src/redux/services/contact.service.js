@@ -3,7 +3,8 @@ import {JSON_HEADERS} from '../../constants/http';
 import {CONTACT} from '../../constants/api';
 import config from '../../config/config';
 
-export const contactService = createApi({
+const contactService = createApi({
+  reducerPath: 'contact',
   baseQuery: fetchBaseQuery({
     baseUrl: config.baseUrl,
     prepareHeaders: (headers) => {
@@ -13,10 +14,10 @@ export const contactService = createApi({
     },
   }),
   endpoints: (builder) => ({
-    getContacts: builder.query({
+    contacts: builder.query({
       query: () => CONTACT.getContacts,
     }),
-    getContact: builder.query({
+    contact: builder.query({
       query: (id) => `${CONTACT.getContacts}/${id}`,
     }),
     // createGame: builder.mutation({
@@ -28,3 +29,5 @@ export const contactService = createApi({
     // }),
   }),
 });
+
+export default contactService;
